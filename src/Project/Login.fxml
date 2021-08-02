@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="400.0" fitWidth="199.0">
+               <image>
+                  <Image url="@images/ts.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="205.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="165.0" layoutY="43.0">
+               <image>
+                  <Image url="@images/lock.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="159.0" text="UserName" textFill="#dacf36">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="211.0" text="PassWord" textFill="#dacf36">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_userName" layoutX="145.0" layoutY="160.0" promptText="UserName" />
+            <PasswordField fx:id="tf_passWord" layoutX="145.0" layoutY="212.0" promptText="PassWord" />
+            <Button fx:id="btn_logIn" layoutX="165.0" layoutY="294.0" mnemonicParsing="false" style="-fx-background-color: #dacf36;" text="Log IN">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

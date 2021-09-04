@@ -10,16 +10,14 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.LoginController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="400.0" fitWidth="199.0">
+            <ImageView fitHeight="149.0" fitWidth="185.0" layoutX="8.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/ts.png" />
-               </image>
-            </ImageView>
+                  <Image url="@images/logo2.PNG" />
+               </image></ImageView>
          </children>
       </AnchorPane>
    </left>
@@ -44,7 +42,7 @@
             </Label>
             <TextField fx:id="tf_userName" layoutX="145.0" layoutY="160.0" promptText="UserName" />
             <PasswordField fx:id="tf_passWord" layoutX="145.0" layoutY="212.0" promptText="PassWord" />
-            <Button fx:id="btn_logIn" layoutX="165.0" layoutY="294.0" mnemonicParsing="false" style="-fx-background-color: #dacf36;" text="Log IN">
+            <Button fx:id="btn_logIn" layoutX="165.0" layoutY="294.0" mnemonicParsing="false" onAction="#changeScene" style="-fx-background-color: #dacf36;" text="Log IN">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

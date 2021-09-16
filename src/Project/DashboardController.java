@@ -37,24 +37,16 @@ public class DashboardController {
 
     @FXML
     void changeScene2(ActionEvent event) throws IOException {
-        Parent parent2 = FXMLLoader.load(getClass().getResource("B1Login.fxml"));
-        Scene scene3 = new Scene(parent2);
 
-        Stage window2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window2.setScene(scene3);
-        window2.show();
 
-    }
-    @FXML
-    void changeScene3(ActionEvent event) throws IOException {
-        Parent parent3 = FXMLLoader.load(getClass().getResource("B2Login.fxml"));
-        Scene scene4 = new Scene(parent3);
-
-        Stage window3 = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window3.setScene(scene4);
-        window3.show();
+        FXMLScene fxmlScene = FXMLScene.load("B2Login.fxml");
+        Parent parent = fxmlScene.root;
+        B2LoginController controller = (B2LoginController) fxmlScene.controller;
+        Scene scene = new Scene(parent);
+        LoginFxml.mainStage.setScene(scene);
 
     }
+
 
 }
 

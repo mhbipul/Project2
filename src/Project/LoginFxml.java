@@ -7,12 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class LoginFxml extends Application{
+    public static Stage mainStage;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        mainStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         //Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("Login.fxml"));
-        primaryStage.setScene(new Scene(root,600,400));
+        primaryStage.setScene(new Scene(root,700,400));
         primaryStage.setTitle("JavaFX App");
 
         primaryStage.show();

@@ -9,21 +9,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.B2LoginController">
    <children>
-      <Label fx:id="b2Name" layoutX="135.0" layoutY="180.0" text="UserName">
+      <Label fx:id="b1Name" layoutX="135.0" layoutY="180.0" text="UserName">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="b2Pass" layoutX="136.0" layoutY="219.0" text="PassWord">
+      <Label fx:id="b1Pass" layoutX="136.0" layoutY="219.0" text="PassWord">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="b2Tf" layoutX="226.0" layoutY="178.0" />
-      <PasswordField fx:id="b2Pf" layoutX="226.0" layoutY="216.0" />
-      <Button fx:id="b2LoginButton" layoutX="238.0" layoutY="264.0" mnemonicParsing="false" onAction="#changeScene5" text="Log In_B2">
+      <TextField fx:id="b1Tf" layoutX="226.0" layoutY="178.0" />
+      <PasswordField fx:id="b1Pf" layoutX="226.0" layoutY="216.0" />
+      <Button fx:id="b1LoginButton" layoutX="234.0" layoutY="265.0" mnemonicParsing="false" onAction="#changeScene4" text="Log In_B1">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
